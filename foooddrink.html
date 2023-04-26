@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodDrink.vn</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header>
+        <div class="mx-width-1349">
+            <div class="header">
+                <div class="header-top" id="navbar">
+                    <div class="header-top-hotline">
+                        <img src="./assets/images/phone.png" alt="">
+                        <div>
+                            <span>028.6679.1177</span>
+                        </div>
+                    </div>
+                    <div class="header-top-logo">
+                        <img src="./assets/images/pngtree-food-logo-png-image_5687709.png" alt="" width="60">
+                    </div>
+                    <div class="header-top-sci">
+                        <img src="./assets/images/zalo.png" alt="" width="30">
+                        <img src="./assets/images/facebook.png" alt="" width="30">
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="header-bottom-menu">
+                        <ul class="menu">
+                            <li>
+                                <a href="">
+                                    Trang Chủ
+                                </a>
+                                <div class="arrow">
+                                    <div class="arrow-up"><i class="fa-solid fa-caret-up"></i></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Sản Phẩm
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="">Rau củ quả</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Các loại rau củ</a>
+                                    </li>
+                                </ul>
+                                <div class="arrow">
+                                    <div class="arrow-up"><i class="fa-solid fa-caret-up"></i></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Tin Tức
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="">Tin tức</a>
+                                    </li>
+                                </ul>
+                                <div class="arrow">
+                                    <div class="arrow-up"><i class="fa-solid fa-caret-up"></i></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Liên Hệ
+                                </a>
+                                <div class="arrow">
+                                    <div class="arrow-up"><i class="fa-solid fa-caret-up"></i></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="Thông tin cần tìm">
+                        <div class="icon-search">
+                            <img src="./assets/images/search.png" alt="">
+                        </div>
+                    </div>
+                    <div class="absolute">
+                        <div class="cart">
+                            <div class="cart-position">
+                                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                <div class="quantily">
+                                    <span> 0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- start header-mobile -->
+            <div class="header-mb">
+                <div class="header-mb-top">
+                    <div class="header-mb-logo">
+                        <img src="./assets/images/logo.png" alt="">
+                    </div>
+                    <div class="haeder-mb-bottom">
+                        <div class="header-mb-main">
+                            <div class="header-mb-cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="header-mb-humber">
+                                <a href="#" id="toggle">
+                                    <i class="fa-solid fa-bars"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="header-mb-menu" id="header-mb-menu">
+                            <div class="header-mb-item">
+                                <a href="#">
+                                    Trang chủ
+                                </a>
+                            </div>
+                            <div class="header-mb-item">
+                                <a href="#">
+                                    Sản phẩm
+                                </a>
+                            </div>
+                            <div class="header-mb-item">
+                                <a href="#">
+                                    Tin tức
+                                </a>
+                            </div>
+                            <div class="header-mb-item">
+                                <a href="#">
+                                    Liên hệ
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+            <!-- start header-mobile -->
+        </div>
+    </header>
+    <main>
+        <section id="banner">
+            <div class="mx-width-1349px">
+                <div class="banner-width-1140px">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 2</div>
+                            <img src="./assets/images/banner.png" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 2</div>
+                            <img src="./assets/images/banner-1.png" style="width:100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                    </div>
+                    <br>
+                    <div style="text-align:center" class="text-align">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="mx-width-1349">
+                <div class="welcome-foodking">
+                    <div class="welcome">
+                        <h1>WELCOME TO FOODKING</h1>
+                    </div>
+                    <div class="banner-item">
+                        <div class="banner-img">
+                            <div class="bg-banner">
+                                <img src="./assets/images/201504291442304330.jpg" alt="">
+                                <a href="">
+                                    <h2>Rau Ăn lá</h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner-img">
+                            <div class="bg-banner">
+                                <img src="./assets/images/60-khoai-mo.jpg" alt="">
+                                <a href="">
+                                    <h2>Rau Ăn lá</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-row">
+                        <div class="row">
+                            <div class="row-all">
+                                <div class="roww-img">
+                                    <img src="./assets/images/oto.png" alt="">
+                                </div>
+                                <div class="row-name">
+                                    <a href="">
+                                        Giao hàng toàn quốc
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row-all">
+                                <img src="./assets/images/gift.png" alt="">
+                                <div class="row-name">
+                                    <a href="">
+                                        Chính sách ưu đãi
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row-all">
+                                <img src="./assets/images/support.png" alt="">
+                                <div class="row-name">
+                                    <a href=""> Liên hệ hỗ trợ</a>
+                                    <div class="row-phone">
+                                        <p>028.66791177</p>
+                                        <p>0902.886.015</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="mx-width-1349">
+                <div class="featured">
+                    <div class="welcome">
+                        <h1>SẢN PHẨM NỔI BẬC</h1>
+                    </div>
+                    <div class="featured-products">
+                        <ul class="menu-featured">
+                            <li>
+                                <div>
+                                    <img src="./assets/images/Bap-cai.jpg" alt="">
+                                    <div class="bg-red-send">
+                                        <div class="btn-send">
+                                            <div class="send-eye">
+                                                <a href=""><i class="fa-solid fa-eye"></i> Xem nhanh</a>
+                                            </div>
+                                            <div class="send-cart">
+                                                <a href=""><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="featured-name">
+                                    <a href="">
+                                        Bắp cải
+                                    </a>
+                                    <p>
+                                        Liên hệ
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="./assets/images/cai-be-xanh.jpg" alt="">
+                                    <div class="bg-red-send">
+                                        <div class="btn-send">
+                                            <div class="send-eye">
+                                                <a href=""><i class="fa-solid fa-eye"></i> Xem nhanh</a>
+                                            </div>
+                                            <div class="send-cart">
+                                                <a href=""><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="featured-name">
+                                    <a href="">
+                                        Cải bẹ xanh
+                                    </a>
+                                    <p>
+                                        Liên hệ
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="./assets/images/cai-cuc.jpg" alt="">
+                                    <div class="bg-red-send">
+                                        <div class="btn-send">
+                                            <div class="send-eye">
+                                                <a href=""><i class="fa-solid fa-eye"></i> Xem nhanh</a>
+                                            </div>
+                                            <div class="send-cart">
+                                                <a href=""><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="featured-name">
+                                    <a href="">
+                                        Cải cúc
+                                    </a>
+                                    <p>
+                                        Liên hệ
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="./assets/images/cai-duoi-phung.jpg" alt="">
+                                    <div class="bg-red-send">
+                                        <div class="btn-send">
+                                            <div class="send-eye">
+                                                <a href=""><i class="fa-solid fa-eye"></i> Xem nhanh</a>
+                                            </div>
+                                            <div class="send-cart">
+                                                <a href=""><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="featured-name">
+                                    <a href="">
+                                        Cải đuôi phụng
+                                    </a>
+                                    <p>
+                                        Liên hệ
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="./assets/images/cai-ngong.jpg" alt="">
+                                    <div class="bg-red-send">
+                                        <div class="btn-send">
+                                            <div class="send-eye">
+                                                <a href=""><i class="fa-solid fa-eye"></i> Xem nhanh</a>
+                                            </div>
+                                            <div class="send-cart">
+                                                <a href=""><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="featured-name">
+                                    <a href="">
+                                        Cải ngồng
+                                    </a>
+                                    <p>
+                                        Liên hệ
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="./assets/images/cai-ngot.jpg" alt="">
+                                    <div class="bg-red-send">
+                                        <div class="btn-send">
+                                            <div class="send-eye">
+                                                <a href=""><i class="fa-solid fa-eye"></i> Xem nhanh</a>
+                                            </div>
+                                            <div class="send-cart">
+                                                <a href=""><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="featured-name">
+                                    <a href="">
+                                        Cải ngọt
+                                    </a>
+                                    <p>
+                                        Liên hệ
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="./assets/images/cai-thao.jpg" alt="">
+                                    <div class="bg-red-send">
+                                        <div class="btn-send">
+                                            <div class="send-eye">
+                                                <a href=""><i class="fa-solid fa-eye"></i> Xem nhanh</a>
+                                            </div>
+                                            <div class="send-cart">
+                                                <a href=""><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="featured-name">
+                                    <a href="">
+                                        Cải Thảo
+                                    </a>
+                                    <p>
+                                        Liên hệ
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="./assets/images/cai-thia.jpg" alt="">
+                                    <div class="bg-red-send">
+                                        <div class="btn-send">
+                                            <div class="send-eye">
+                                                <a href=""><i class="fa-solid fa-eye"></i> Xem nhanh</a>
+                                            </div>
+                                            <div class="send-cart">
+                                                <a href=""><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="featured-name">
+                                    <a href="">
+                                        Cải thìa
+                                    </a>
+                                    <p>
+                                        Liên hệ
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more-featured">
+                        <a href="">
+                            XEM THÊM >>>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="new">
+                <div class="welcome">
+                    <h1>Tin Tức</h1>
+                </div>
+                <div class="new-day">
+                    <div class="new-day-food">
+                        <div>
+                            <img src="./assets/images/rausach1.jpg" alt="">
+                        </div>
+                        <div class="new-content">
+                            <div class="new-today">
+                                <a href="">Thực phẩm thường khác gì với thực phẩm hữu cơ ?</a>
+                            </div>
+                            <div class="new-time">
+                                <div class="new-time-day">
+                                    <p>Đăng ngày:</p>
+                                </div>
+                                <div class="new-time-oclock">
+                                    <p>01/09/2020</p>
+                                </div>
+                            </div>
+                            <div class="new-intro">
+                                <div>
+                                    <p>Thực phẩm thường khác gì với thực phẩm hữu cơ <br> Thực...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-new-eye">
+                            <div class="new-eyenow">
+                                <a href=""><i class="fa-solid fa-eye"></i> Xem nhanh</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-day-food">
+                        <div>
+                            <img src="./assets/images/118784634_23845276803540043_2750659006352467162_n.jpg" alt="">
+                        </div>
+                        <div class="new-content">
+                            <div class="new-today">
+                                <a href="">Thực phẩm thường khác gì với thực phẩm hữu cơ ?</a>
+                            </div>
+                            <div class="new-time">
+                                <div class="new-time-day">
+                                    <p>Đăng ngày:</p>
+                                </div>
+                                <div class="new-time-oclock">
+                                    <p>01/09/2020</p>
+                                </div>
+                            </div>
+                            <div class="new-intro">
+                                <div>
+                                    <p>Thực phẩm thường khác gì với thực phẩm hữu cơ <br> Thực...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-new-eye">
+                            <div class="new-eyenow">
+                                <a href=""><i class="fa-solid fa-eye"></i> Xem nhanh</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-day-food">
+                        <div>
+                            <img src="./assets/images/rausach1.jpg" alt="">
+                        </div>
+                        <div class="new-content">
+                            <div class="new-today">
+                                <a href="">Thực phẩm thường khác gì với thực phẩm hữu cơ ?</a>
+                            </div>
+                            <div class="new-time">
+                                <div class="new-time-day">
+                                    <p>Đăng ngày:</p>
+                                </div>
+                                <div class="new-time-oclock">
+                                    <p>01/09/2020</p>
+                                </div>
+                            </div>
+                            <div class="new-intro">
+                                <div>
+                                    <p>Thực phẩm thường khác gì với thực phẩm hữu cơ <br> Thực...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-new-eye">
+                            <div class="new-eyenow">
+                                <a href=""><i class="fa-solid fa-eye"></i> Xem nhanh</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-top">
+                <div class="footer-top-content">
+                    <div>
+                        <img src="./assets/images/footer-logo.png" alt="">
+                    </div>
+                    <div>
+                        <p>Trồng trọt hữu cơ là hệ thống sản xuất trồng trọt dựa vào các chu trình sinh học tự nhiên của
+                            hệ sinh thái, đa dạng sinh học phù hợp với điều kiện khí hậu và đất đai của địa phương, kết
+                            hợp canh tác truyền thống với khoa học công nghệ; không sử dụng hoá chất tổng hợp (như thuốc
+                            bảo vệ thực vật, chất kích thích tăng trưởng, phân bón hoá học…) nhằm tạo ra sản phẩm cây
+                            trồng phù hợp với lợi ích của con người và môi trường, bảo vệ sức khỏe con người, đất đai,
+                            hệ sinh thái. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-center">
+                <div class="footer-center-phone">
+                    <div>
+                        <h3>Liên Hệ</h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <div>
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div>
+                                <p class="footer-name">Hottline:</p>
+                                <p class="footer-main">0975.676.015</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <div>
+                                <p class="footer-name">Website:</p>
+                                <p class="footer-main">https://foodking.vn</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="footer-name">Email:</p>
+                                <p class="footer-main">cskh.foodking@gmail.com</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="policy">
+                    <div>
+                        <h3>Liên Hệ</h3>
+                    </div>
+                    <ul class="policy-menu">
+                        <li>
+                            <a href="">Bảo mật thông tin</a>
+                        </li>
+                        <li>
+                            <a href="">Quy trình xử lý và khiếu nại</a>
+                        </li>
+                        <li>
+                            <a href="">Thanh toán giao hàng</a>
+                        </li>
+                        <li>
+                            <a href="">Chính sách đổi trả</a>
+                        </li>
+                    </ul>
+                    <div class="policy-img">
+                        <img src="./assets/images/url.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-input">
+                    <div class="footer-content">
+                        <h3>Nhập bản tin</h3>
+                        <p>Đăng ký theo dõi để nhận những tin tức mới nhất và nhiều thông tin khuyễn mãi từ chúng tôi
+                        </p>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Nhập địa chỉ email của bạn">
+                    </div>
+                    <div class="footer-monitor">
+                        <div>
+                            <a href=""> THEO DÕI <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>Công ty cổ phần ORYACO</p>
+                    <p>Mã số thuế/Số QĐ thành lập: 0313929907</p>
+                    <p>Địa Chỉ: 93 Đường 30, KDC An Phú Hưng, P. Tân Phong, Q.7, Tp.HCM.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+
+    // scroll
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.display = "flex";
+        } else {
+            document.getElementById("navbar").style.display = "none";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+
+// toggle 
+
+$(function () {
+    $('#toggle').on('click',function () {
+        $('#header-mb-menu').toggleClass('open');
+    });
+});
+
+</script>
+
+</html>
