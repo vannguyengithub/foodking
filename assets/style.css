@@ -7,12 +7,19 @@
 .mx-width-1349 {
   max-width: 1349px;
 }
+.banner-width-1140px {
+  position: relative;
+}
+.banner-width-1140px .text-align {
+  bottom: 0;
+  top: unset;
+}
 
 .header {
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   top: 0;
-  width: 1140px;
+  width: 100%;
 }
 
 .header-top {
@@ -256,6 +263,7 @@
   background: #fffaec;
   width: 100%;
   text-align: center;
+  padding: 30px 0;
 }
 .welcome::before {
   content: "";
@@ -264,7 +272,10 @@
   background: #557F39;
   height: 4px;
   left: 100px;
-  top: 20px;
+  top: 50px;
+}
+.header-mb {
+  display: none;
 }
 .welcome::after {
   content: "";
@@ -273,7 +284,7 @@
   background: #557F39;
   height: 4px;
   right: 100px;
-  top: 20px;
+  top: 50px;
 }
 .welcome h1 {
   font-size: 40px;
@@ -281,6 +292,10 @@
   color: #533626;
   font-family: "Noto Serif", sans-serif;
   font-weight: unset;
+}
+.new > .welcome {
+  margin: 30px 0;
+  background-color: #fff;
 }
 
 .banner-item {
@@ -845,5 +860,11 @@ footer {
   }
   .footer-center .policy::before {
     content: none;
+  }
+  .header-mb {
+    display: block;
+  }
+  main {
+    margin-top: 0 !important;
   }
 }/*# sourceMappingURL=style.css.map */
