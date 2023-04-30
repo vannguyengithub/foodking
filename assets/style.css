@@ -7,19 +7,16 @@
 .mx-width-1349 {
   max-width: 1349px;
 }
-.banner-width-1140px {
-  position: relative;
-}
-.banner-width-1140px .text-align {
-  bottom: 0;
-  top: unset;
-}
 
 .header {
   position: fixed;
-  z-index: 999;
+  z-index: 1;
   top: 0;
   width: 100%;
+}
+
+.header-mb {
+  display: none;
 }
 
 .header-top {
@@ -129,6 +126,10 @@
   display: block;
 }
 
+.tag-a.active {
+  color: red;
+}
+
 .sub-menu {
   position: absolute;
   background-color: rgba(79, 103, 46, 0.8);
@@ -199,6 +200,7 @@
   border-radius: 0 3px 3px 0;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
 }
 
@@ -250,6 +252,15 @@
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -263,7 +274,6 @@
   background: #fffaec;
   width: 100%;
   text-align: center;
-  padding: 30px 0;
 }
 .welcome::before {
   content: "";
@@ -272,10 +282,7 @@
   background: #557F39;
   height: 4px;
   left: 100px;
-  top: 50px;
-}
-.header-mb {
-  display: none;
+  top: 20px;
 }
 .welcome::after {
   content: "";
@@ -284,7 +291,7 @@
   background: #557F39;
   height: 4px;
   right: 100px;
-  top: 50px;
+  top: 20px;
 }
 .welcome h1 {
   font-size: 40px;
@@ -292,10 +299,6 @@
   color: #533626;
   font-family: "Noto Serif", sans-serif;
   font-weight: unset;
-}
-.new > .welcome {
-  margin: 30px 0;
-  background-color: #fff;
 }
 
 .banner-item {
@@ -689,6 +692,31 @@ footer {
   line-height: 170%;
 }
 
+.arrow-foodking {
+  transition: all 0.3s ease;
+  position: fixed;
+  margin: 0 28px 30px 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 99;
+  background: black;
+  border-radius: 999px;
+  display: none;
+}
+.arrow-foodking a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+}
+.arrow-foodking a i {
+  font-size: 18px;
+  color: yellow;
+}
+
 @media (max-width: 700px) {
   .header-top-hotline {
     display: none;
@@ -860,11 +888,5 @@ footer {
   }
   .footer-center .policy::before {
     content: none;
-  }
-  .header-mb {
-    display: block;
-  }
-  main {
-    margin-top: 0 !important;
   }
 }/*# sourceMappingURL=style.css.map */

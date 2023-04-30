@@ -11,7 +11,10 @@
   position: fixed;
   z-index: 1;
   top: 0;
-  width: 1140px;
+  width: 100%;
+}
+.header-mb{
+  display: none;
 }
 .header-top{
     display: flex;
@@ -117,6 +120,11 @@
         display: block;
       }
     }
+  }
+}
+.tag-a {
+  &.active {
+    color: red;
   }
 }
 .sub-menu{
@@ -647,6 +655,30 @@ footer{
       color: #fff;
       font-size: 12px;
       line-height: 170%;
+    }
+  }
+}
+.arrow-foodking{
+  transition: all 0.3s ease;
+  position: fixed;
+  margin: 0 28px 30px 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 99;
+  background: black;
+  border-radius: 999px;
+  display: none;
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    i{
+      font-size: 18px;
+      color: yellow;
     }
   }
 }
